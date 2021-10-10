@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Clients";
+    string[] TableHeaders = new string[] {"Id"
+                        ,"Name"
+                        ,"Address"
+                        ,"PostCode"};
+}
+
+
+@using (Html.BeginForm("Index", "Clients", FormMethod.Post))
+{
+    <input class="btn btn-success" type="submit" value="Update" />
+
+}
+<div class="table">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                @{
+                    foreach (var head in TableHeaders)
+                    {
+                        <th>
+                            @head
+                        </th>
+                    }
+                }
+            </tr>
+        </thead>
+
+        <tbody>
+            @{
+                if (Model != null)
+                {
+                    foreach (var Data in Model)
+                    {
+                        <tr>
+                            <td>@Data.Id</td>
+                            <td>@Data.Name</td>
+                            <td>@Data.Address</td>
+                            <td>@Data.PostCode</td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>
