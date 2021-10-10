@@ -4,13 +4,7 @@ Database name: ClientsSQL
 
 Database script: 
 
-USE [ClientsSQL]
-GO
-/****** Object:  Table [dbo].[Client]    Script Date: 10-Oct-21 3:40:00 AM ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+```sql
 CREATE TABLE [dbo].[Client](
 	[id] [int] IDENTITY(1,1) NOT NULL,
 	[name] [varchar](100) NOT NULL,
@@ -26,11 +20,11 @@ UNIQUE NONCLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
+```
 
 
 JSON:
-
+```json
 [
 	{
 		"Name":"UAB \"Gintarinė vaistinė\" fil. nr. 2",
@@ -43,6 +37,6 @@ JSON:
 		"PostCode":""
 	}
 ]
-
+```
 
 db and json also available as files: ClientsSQL.sql and Clients.json
