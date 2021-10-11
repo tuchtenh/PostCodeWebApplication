@@ -1,6 +1,6 @@
 # PostCodeWebApplication
 
-DB* and json also available as files: ClientsSQL.sql, Clients1.json, Clients2.json
+DB* and json also available as files: ClientsSQL.sql, ClientList1.json, ClientList2.json
 
 Database name: ClientsSQL
 
