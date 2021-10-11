@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lukas\\source\\repos\\PostCodeWebApplication\\PostCodeWebApplication.csproj": {}
+    "D:\\Luko\\Code\\PostCodeWebApplication\\PostCodeWebApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lukas\\source\\repos\\PostCodeWebApplication\\PostCodeWebApplication.csproj": {
+    "D:\\Luko\\Code\\PostCodeWebApplication\\PostCodeWebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lukas\\source\\repos\\PostCodeWebApplication\\PostCodeWebApplication.csproj",
+        "projectUniqueName": "D:\\Luko\\Code\\PostCodeWebApplication\\PostCodeWebApplication.csproj",
         "projectName": "PostCodeWebApplication",
-        "projectPath": "C:\\Users\\Lukas\\source\\repos\\PostCodeWebApplication\\PostCodeWebApplication.csproj",
+        "projectPath": "D:\\Luko\\Code\\PostCodeWebApplication\\PostCodeWebApplication.csproj",
         "packagesPath": "C:\\Users\\Lukas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lukas\\source\\repos\\PostCodeWebApplication\\obj\\",
+        "outputPath": "D:\\Luko\\Code\\PostCodeWebApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,14 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PostCodeWebApplication.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PostCodeWebApplication
 {
@@ -28,11 +25,11 @@ namespace PostCodeWebApplication
             services.AddDbContext<Models.DatabaseContext>(options=>options.UseSqlServer(connection));
             services.AddControllersWithViews();
 
-            /*services.AddHttpClient();
-            services.AddHttpClient("GetPostCode",client =>
+            services.AddHttpClient();
+            services.AddHttpClient<IPostCodeService,PostCodeAPIService>(client =>
             {
-                client.BaseAddress = new Uri(Configuration.GetConnectionString("WebAPIBaseUrl"));
-            });*/
+                client.BaseAddress = new Uri(Configuration.GetValue<string>("WebAPIBaseUrl"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

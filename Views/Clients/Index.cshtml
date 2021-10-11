@@ -1,16 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Clients";
-    string[] TableHeaders = new string[] {"Id"
-                        ,"Name"
+    string[] TableHeaders = new string[] {"Name"
                         ,"Address"
                         ,"PostCode"};
 }
 
 
-@using (Html.BeginForm("Index", "Clients", FormMethod.Post))
+@using (Html.BeginForm("Update", "Clients", FormMethod.Post))
 {
-    <input class="btn btn-success" type="submit" value="Update" />
-
+    <input class="btn btn-success" type="submit" value="Update PostCode" style="float: right;" />
 }
 <div class="table">
     <table class="table table-bordered table-hover">
@@ -34,7 +32,6 @@
                     foreach (var Data in Model)
                     {
                         <tr>
-                            <td>@Data.Id</td>
                             <td>@Data.Name</td>
                             <td>@Data.Address</td>
                             <td>@Data.PostCode</td>

@@ -1,5 +1,3 @@
-using System;
-
 namespace PostCodeWebApplication.Models
 {
     public class ErrorViewModel
