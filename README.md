@@ -1,5 +1,9 @@
 # PostCodeWebApplication
 
+WebApplication main features: Display database content, add/update database using a json formated as shown below, update post codes using postit.lt/API/
+Database features: logs all the insert/update/delete operations on Client table inside TransactionLog table.
+
+
 DB* and json also available as files: ClientsSQL.sql, ClientList1.json, ClientList2.json
 
 Database name: ClientsSQL
