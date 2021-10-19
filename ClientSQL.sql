@@ -1,6 +1,6 @@
 USE [ClientsSQL]
 GO
-/****** Object:  Table [dbo].[Client]    Script Date: 11-Oct-21 2:43:36 AM ******/
+/****** Object:  Table [dbo].[Client]    Script Date: 19-Oct-21 7:55:20 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -16,7 +16,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TransactionLog]    Script Date: 11-Oct-21 2:43:36 AM ******/
+/****** Object:  Table [dbo].[TransactionLog]    Script Date: 19-Oct-21 7:55:20 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -32,19 +32,7 @@ CREATE TABLE [dbo].[TransactionLog](
 	[modified] [datetime] NOT NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[updatelog]    Script Date: 11-Oct-21 2:43:36 AM ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[updatelog](
-	[updated] [varchar](20) NULL,
-	[oldvalue] [int] NULL,
-	[newvalue] [int] NULL,
-	[modified] [datetime] NULL
-) ON [PRIMARY]
-GO
-/****** Object:  Trigger [dbo].[Transaction_trigger]    Script Date: 11-Oct-21 2:43:36 AM ******/
+/****** Object:  Trigger [dbo].[Transaction_trigger]    Script Date: 19-Oct-21 7:55:20 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
